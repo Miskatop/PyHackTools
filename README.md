@@ -6,3 +6,14 @@
 python3 ddos.py [ARGUMENS]
 # For Help use -h or --help flags
 ```
+## CLIPBOARD - clipboard.py is a mini utility for handle clipboard changes
+### Usage\`
+```python
+
+from clipboard import on_change
+
+def changed(data):
+  print('clipboard is changed - ', data)
+
+on_change(changed)
+```
