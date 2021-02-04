@@ -17,3 +17,14 @@ def changed(data):
 
 on_change(changed)
 ```
+## KEYLOGGER - kelogger.py is a mini utility for handle keyboard button press
+### Usage\`
+```python
+
+from kelogger import on_press
+
+def changed(key):
+  print("key - ", key, ' is pressed')
+
+on_press(changed)
+```
